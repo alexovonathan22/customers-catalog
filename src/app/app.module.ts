@@ -5,13 +5,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+//adding routing to my app
 import { AppRoutingModule } from './app-routing.module';
+import { OrdersComponent } from './orders/orders.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,
