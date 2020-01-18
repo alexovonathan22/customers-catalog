@@ -4,6 +4,8 @@ import { CustomersModule } from './customers/customers.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SharedModule } from './shared/shared.module';
+import { CoreModule } from './core/core.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -13,8 +15,10 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
+    CoreModule,
     CustomersModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
