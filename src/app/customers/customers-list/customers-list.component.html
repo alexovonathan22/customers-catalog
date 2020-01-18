@@ -17,7 +17,8 @@
     <tr *ngFor="let cust of filteredCustomers">
         <td>{{cust.id}}</td>
         <td>
-            <a>
+            <!-- we are linking to routes with the router link directive -->
+             <a [routerLink]="[ '/orders', cust.id ]">
                 <!-- capitalize is a custom pipe -->
                 {{ cust.name  | capitalize }}
             </a>

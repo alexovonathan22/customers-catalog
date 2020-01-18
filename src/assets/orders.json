@@ -21,7 +21,7 @@
           ]
     },
     {
-          "customerId": 4,
+          "customerId": 3,
           "orderItems": [
               {"id": 7, "productName": "Boomerang", "itemCost": 29.99},
               {"id": 8, "productName": "Helmet", "itemCost": 19.99},

@@ -7,19 +7,19 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 //adding routing to my app
 import { AppRoutingModule } from './app-routing.module';
-import { OrdersComponent } from './orders/orders.component';
+import { OrdersModule } from './orders/orders.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    OrdersComponent
   ],
   imports: [
     BrowserModule,
-    CoreModule,
     CustomersModule,
+    OrdersModule,
+    CoreModule,
     SharedModule,
     AppRoutingModule
   ],

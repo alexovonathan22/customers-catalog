@@ -37,6 +37,7 @@ export class DataService {
         .pipe(
           map(orders => {
             let custOrders = orders.filter((order: IOrder) => order.customerId === id);
+            console.log(custOrders);
             return custOrders;
           }),
           catchError(this.handleError)

@@ -1,5 +1,5 @@
-<div *ngIf="customer">
-    <h1>Orders for {{ customer.name | capitalize }}</h1>
+<div *ngIf="_customer">
+    <h1>Orders for {{ _customer.name | capitalize }}</h1>
 
     <table class="table table-hover orders-table" 
            *ngFor="let order of orders">
@@ -9,7 +9,9 @@
         </tr>
     </table>
 </div>
-<div *ngIf="!customer">
-   No customer found
+<div *ngIf="!_customer ">
+   No customer order found
 </div>  
 <br />
+
+<a routerLink="/customers">Go Back to all Customers</a>
